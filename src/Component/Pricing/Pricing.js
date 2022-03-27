@@ -1,11 +1,29 @@
 import React from 'react';
 import PricingOption from '../pricingOption/PricingOption';
 
-const Pricing = () => {
+const Pricing = () => { 
     const pricingOptions =[
-        {id:1, name:'free', price: 10},
-        {id:2, name:'Regular', price: 9.88},
-        {id:3, name:'Premium', price: 9.99},
+        {id:1, name:'free', price: 10, benefits : [
+            'lifetime free',
+            'unlimited deals',
+            'localized deals',
+            'fantastic deals',
+            'crazy deals'
+        ]},
+        {id:2, name:'Regular', price: 9.88, benefits : [
+            'everything on free',
+            'unlimited deals',
+            'localized deals',
+            'fantastic deals',
+            'crazy deals'
+        ]},
+        {id:3, name:'Premium', price: 9.99, benefits : [
+            'everything on Regular',
+            'unlimited deals',
+            'localized deals',
+            'fantastic deals',
+            'crazy deals'
+        ]},
     ]
     return (
         <div className='bg-indigo-300 p-4 mt-8'>
